@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>SS BANK</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/img/logo.png" rel="icon">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/5eec94b9ab.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <style>
+        .contain {
+            background: floralwhite;
+            width: 85%;
+            height: 320px;
+            margin: 2% 0% 0% 7%;
+            border-radius: 39px;
+        }
+
+        form {
+            display: contents;
+        }
+
+        h1 {
+            padding: 1%;
+            margin: 0%;
+            text-align: center;
+            color: coral;
+            font-size: 25px;
+            font-weight: 510;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .row {
+            margin: 1%;
+        }
+        .swal2-title {
+            background: snow;
+            display: flex;
+            width: 60%;
+            height: 60%;
+           
+        }
+        .swal2-content {
+            font-size: x-large;
+            font-family: cursive;
+        }
+        .swal2-header,
+        .swal2-actions {
+            font-size: large;
+        }
+        .col-lg-6 {
+            box-shadow: 8px 8px 8px darkcyan;
+            TEXT-ALIGN: -webkit-center;
+            width: 50%;
+            padding: 2%;
+            margin: 2% 3% 0% 3%;
+            background-color: hsla(120, 39%, 54%, 0.932);
+            border-radius: 13px;
+            height: 140px;
+        }
+
+        .card-header {
+            margin-bottom: 4%;
+            font-size: 22px;
+            font-weight: 800;
+            color: inherit;
+            font-family: auto;
+            margin-top: -4%;
+        }
+
+        .black {
+            height: 23px;
+            margin: -11px 0px 19px -21px;
+            width: 115%;
+            background-color: black;
+            display: block;
+        }
+
+        .card-body {
+            display: table-caption;
+            margin-bottom: 4%;
+            font-size: 18px;
+            font-weight: 800;
+            color: inherit;
+            font-family: auto;
+            margin-top: -7%;
+        }
+
+        label {
+            display: inline-block;
+            max-width: 100%;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .amount {
+            width: 20%;
+            padding: 2%;
+            margin: 4.7% -0.9% 0% 0%;
+            background-color: coral;
+            border-radius: 0px;
+            height: 78px;
+        }
+
+        .arrow {
+            margin-top: 3.2%;
+            width: 0px;
+            height: 0px;
+            border-top: 55px solid transparent;
+            border-left: 110px solid coral;
+            border-bottom: 55px solid transparent;
+        }
+
+        .btn-success {
+            font-family: inherit;
+            width: 25%;
+            color: #fff;
+            font-weight: 600;
+            font-size: 90%;
+            background-color: coral;
+            border-color: coral;
+            margin-top: 3%;
+        }
+
+        .alert {
+            background: coral;
+            width: 25%;
+            height: 70px;
+            text-align: center;
+            margin: auto;
+            color: aliceblue;
+            font-size: medium;
+            margin-top: 14px;
+            font-weight: bold;
+        }
+
+
+        #footer {
+            margin-left: 15px;
+            padding-top: 0px;
+            height: 100px;
+            color: #212529;
+            font-size: 14px;
+            background: #fef8f5;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #footer .soc {
+            margin: 0% 0% 0% 13%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="hcontainer">
+
+            <div class="logo">
+                <a href=" /index "><img src="/img/logo.png" alt="" class="img-fluid"></a>
+                <h1 class="text-light"><a href="/index "><span>SS Bank</span></a></h1>
+
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href=" /index">Home</a></li>
+                    <li><a class="nav-link scrollto" href=" /customer">All customers</a></li>
+                    <li><a class="nav-link scrollto" href="/transaction">Transaction History</a></li>
+                    <li><a class="getstarted scrollto" href=" /index">Get Started</a></li>
+                </ul>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <div class="contain">
+        <h1>TRANSFER MONEY</h1>
+        <div class="row">
+            <form action="/transfer" method="POST" class="needs-validation" novalidate>
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            SENDER
+                        </div>
+                        <div class="black"></div>
+                        <div class="card-body">
+
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="sname">From: </label>
+                                <select class="form-select" name="sname" id="sname">
+                                    {{#each records}}
+                                    <option style="text-transform: capitalize;" value="{{name}}">
+                                        {{name}}
+                                    </option>
+                                    {{/each}}
+                                </select>
+                                <!-- <input type="text" id="sname" name="sname" placeholder="sender name">-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="input-group mb-3" style="margin-top: -15px;">
+                        <span class="input-group-text"
+                            style="font-size: large; margin-left: 45px; font-family: 'FontAwesome'; font-weight: 900; letter-spacing: 1px;">AMOUNT
+                        </span>
+                        <div class="curr" style="display: flex;"> <span
+                                style="font-size: 23px; margin-left: 10px;">₹</span>
+                            <input type="number" style=" margin-right: -10px; margin-left: 5px;" class="form-control"
+                                id="balance" name="balance" required="" min="0">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="arrow"></div>
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            RECIPIENT
+                        </div>
+                        <div class="black"></div>
+                        <div class="card-body">
+
+
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="rname">Transfer to:</label>
+                                <select class="form-select" id="rname" name="rname">
+                                    {{#each records}}
+                                    <option style="text-transform: capitalize;" value="{{name}}">
+                                        {{name}}
+                                    </option>
+                                    {{/each}}
+                                </select>
+                                <!-- <input type="text" id="rname" name="rname" placeholder="Client name"> -->
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-12 text-center">
+            <button class="third btn btn-success" name="submit" value="submit">Make Your Transaction</button>
+        </div>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector(".third").addEventListener('click', function () {
+            Swal.fire("Thank you", "Your Transaction is Successful !", "success");
+        });
+    </script>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="copyright">
+                <h4>Our Social Networks</h4>
+                <div class="soc" style="display: flex;">
+                    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+                <span style="margin-left: 4%;">&copy; Copyright <strong> 2021 SS BANK </span></strong>| All Rights
+                Reserved
+            </div>
+
+        </div>
+    </footer><!-- End Footer -->
+
+
+
+
+
+
+
+</body>
+
+</html>

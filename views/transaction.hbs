@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>SS BANK</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/img/logo.png" rel="icon">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/5eec94b9ab.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <style>
+        .row {
+            display: flex;
+            margin-right: -15px;
+            margin-left: -15px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Raleway';
+            font-weight: 600;
+        }
+
+        .card {
+            background: antiquewhite;
+            margin: 0%;
+            border-radius: 39px;
+            padding: 4%;
+            box-shadow: 10px 10px 10px dimgrey;
+        }
+
+        .card-body {
+            background: linear-gradient(45deg, #999, transparent);
+        }
+
+        #footer {
+            padding-top: 18px;
+            height: 150px;
+            color: #212529;
+            font-size: 18px;
+            background: #fef8f5;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="hcontainer">
+
+            <div class="logo">
+                <a href=" /index "><img src="/img/logo.png" alt="" class="img-fluid"></a>
+                <h1 class="text-light"><a href=" /index "><span>SS Bank</span></a></h1>
+
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href=" /index ">Home</a></li>
+                    <li><a class="nav-link scrollto" href=" /customer ">All customers</a></li>
+                    <li><a class="nav-link scrollto" href=" /index ">Services</a></li>
+                    <li><a class="getstarted scrollto" href=" /index ">Get Started</a></li>
+                </ul>
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    <div class="container" style="margin-bottom: 37px;">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="card">
+                    <div class="card-header" style="margin-top: -25px;">
+                        <h1>All Transactions</h1>
+                    </div>
+                    <div class="card-body" style="background: white;">
+                        <ul class="list-group list-group-flush">
+                            
+                            {{#each records}}
+                            <li class="list-group-item" style="text-transform: capitalize; font-family: sans-serif; font-weight: 500; background: linear-gradient(45deg, #fcf8e3, transparent);">
+                                {{Description}} on {{Date}}</b>
+                            </li>
+                           {{/each}}
+                           
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="copyright">
+                <h4>Our Social Networks</h4>
+                <div class="soc" style="display: flex;">
+                    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+                &copy; Copyright <strong><span> 2021 SS BANK </span></strong>| All Rights Reserved
+            </div>
+
+        </div>
+    </footer><!-- End Footer -->
+
+
+
+
+
+
+
+</body>
+
+</html>

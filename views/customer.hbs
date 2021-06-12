@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SS BANK</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/img/logo.png" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <script src="https://use.fontawesome.com/5eec94b9ab.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="/css/style.css" rel="stylesheet">
+  <style>
+    @media screen and (min-width: 900px) {
+      .container {
+        width: 60%;
+      }
+    }
+
+    .team {
+      background: none;
+      padding: 20px;
+    }
+
+    .team .cust-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    .team .mem-content {
+      display: flex;
+      ;
+    }
+
+    .team .c-image {
+      display: inherit;
+      width: 34%;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px slategrey;
+    }
+
+    .team .member-card-info {
+      margin: -2% 18% 0% 15%;
+    }
+
+    .section-title h2 {
+      padding-bottom: 25px;
+      margin-bottom: 15px;
+      position: relative;
+      font-size: 32px;
+      font-weight: 700;
+      color: #4e4039;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: #eb5d1e;
+      bottom: 0;
+      left: calc(50% - 30px);
+    }
+
+    .team .customer-card {
+      margin: 1% 4% 3% 4%;
+      padding: 25px;
+      display: inherit;
+      width: 35%;
+      height: 200px;
+      background: whitesmoke;
+      display: flex;
+      flex-wrap: nowrap;
+      border-radius: 30px;
+      box-shadow: 5px 5px 5px slategrey;
+    }
+
+    .team .member-card-info {
+      text-align: center;
+      margin: -1% 2% 0% 2%;
+      width: 100%;
+    }
+
+    .member-card-info h4 {
+      font-size: 15px;
+      font-weight: 700;
+      font-family: 'Open Sans';
+    }
+
+    .member-card-info span {
+      font-size: 14px;
+      font-family: 'Raleway';
+      font-style: oblique;
+      font-weight: 600;
+      color: slategrey;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-success {
+      padding: 2%;
+      font-family: inherit;
+      width: 35%;
+      color: #fff;
+      font-weight: 700;
+      font-size: 100%;
+      background-color: slategrey;
+      border-color: slategrey;
+      margin-top: 7%;
+    }
+
+    .button .btn:hover {
+      transform: scale(1.15);
+      background-color: dimgray;
+      border-color: dimgray;
+    }
+
+    #footer {
+      padding-top: 18px;
+      height: 150px;
+      color: #212529;
+      font-size: 18px;
+      background: #fef8f5;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="hcontainer">
+
+      <div class="logo">
+        <a href=" /index "><img src="/img/logo.png" alt="" class="img-fluid"></a>
+        <h1 class="text-light"><a href=" /index "><span>SS Bank</span></a></h1>
+
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href=" /index ">Home</a></li>
+          <li><a class="nav-link scrollto" href=" /customer ">All customers</a></li>
+          <li><a class="nav-link scrollto" href="/transaction">Transaction History</a></li>
+          <li><a class="getstarted scrollto" href=" /index ">Get Started</a></li>
+        </ul>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Customer Section ======= -->
+  <section id="team" class="team">
+    <div class="cardcontainer">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2 style="font-size: xx-large; font-weight: 600;">CUSTOMERS</h2>
+
+
+      </div>
+
+      <div class="cust-row">
+        {{#each records}}
+        <div class="customer-card" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="mem-content">
+            <img src="img/customer/{{image}}" class="c-image" alt="profile picture">
+            
+            <div class="member-card-info">
+              <h4>{{name}}</h4>
+              <span>{{proffession}} <br> Email: {{email}} <br> Account Balance: ₹ {{balance}} </span>
+              <div class="button text-center">
+                <a href="/transfer"><button class="btn btn-success">Transfer</button></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    
+  </section><!-- End Team Section -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container py-4">
+      <div class="copyright">
+        <h4>Our Social Networks</h4>
+        <div class="soc" style="display: flex;">
+          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
+        &copy; Copyright <strong><span> 2021 SS BANK </span></strong>| All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+
+
+
+
+</body>
+
+</html>

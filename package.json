@@ -1,0 +1,28 @@
+{
+  "name": "ssb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.16.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.1.2",
+    "mongoose": "^5.12.7",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0",
+    "node": "^16.1.0",
+    "nodemon": "^2.0.7",
+    "sweetalert2": "^10.16.7",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
